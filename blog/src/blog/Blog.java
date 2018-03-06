@@ -1,21 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package blog;
+import java.util.*;
+public class Blog 
+{
+private final List<Note> notes = new ArrayList();
+private String title;
 
-/**
- *
- * @author Student
- */
-public class Blog {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public Blog(String title) {
+        this.title = title;
     }
+
+public void add(Note note){
+notes.add(note);    
+}
+
+   
     
 }
