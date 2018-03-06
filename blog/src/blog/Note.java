@@ -11,6 +11,11 @@ public class Note {
     public void add(Comment comment){
         comments.add(comment);
     }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+    
     public String toString()
     {
         StringBuilder sb = new StringBuilder();
@@ -20,6 +25,10 @@ public class Note {
         sb.append("komentarze: "+comments);
         sb.append("/n");
         return sb.toString();
+    }
+
+    int numberOfComments() {
+       return comments.size();
     }
     
     
